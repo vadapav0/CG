@@ -1,0 +1,15 @@
+Arc
+
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+int gd=DETECT, gm;
+initgraph(&gd,&gm, "c:\\TC\\bgi");
+arc(150,150,0,135,50);
+outtextxy(150,130,"ARC");
+outtextxy(10,20,"Name: Shraddha");
+getch();
+closegraph();
+return 0;
+}
