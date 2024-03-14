@@ -1,0 +1,14 @@
+Circle function 
+
+#include<graphics.h>
+#include<conio.h>
+int main()
+{
+int gd=DETECT, gm;
+initgraph(&gd,&gm, "c:\\TC\\bgi");
+circle(100,100,50);
+getch();
+closegraph();
+return 0;
+}
+
