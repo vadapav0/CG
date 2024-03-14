@@ -1,0 +1,30 @@
+Divide screen in 4 regions 
+
+#include<graphics.h> 
+#include<stdlib.h> 
+#include<stdio.h> 
+#include<conio.h> 
+int main(void) 
+{ 
+int gd = DETECT,gm; 
+int xmax, ymax; 
+initgraph(&gd,&gm,"C:\\TC\\BGI"); 
+setcolor(getmaxcolor()); 
+xmax =getmaxx(); 
+ymax =getmaxy(); 
+line(xmax/2,0,xmax/2,ymax); 
+line(0,ymax/2,xmax,ymax/2); 
+circle(170,125,100); 
+outtextxy(170,125,"Circle"); 
+rectangle(58,251,304,392); 
+outtextxy(60,300,"Rectangle"); 
+arc(500,150,45,135,100); 
+outtextxy(500,150,"ARC"); 
+ellipse(500,300,0,360,75,25); 
+outtextxy(500,300,"Ellipse"); 
+outtextxy(10,20,"Name: Sumit "); 
+outtextxy(10,50,"Roll.No: 19 "); 
+getch(); 
+closegraph(); 
+return 0; 
+}
